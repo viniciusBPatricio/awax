@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+  
+
+}
+.logoimg{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(194, 96, 26);
+    border-radius: 40px;
+}
+
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-endA;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+.menu li a:hover,
+.menu .active a{
+    border-bottom:5px solid rgb(194, 96, 26);
+    color: #ccc;
+}
+
+
+.banner{
+    background-color: rgb(167, 167, 167);
+    height: calc(100vh - 100px);
+    background-image: url('../image/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .slaiders {
+    width: 100vw;
+    height: 100%;
+    background-color: rgb( 0, 0, 0, 0.8)
+}
+
+.banner .slaide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}   
+
+.banner .slaidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 101px;
+}
+
+.banner h1 span{
+    color: rgb(194, 96, 26);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a{
+    display: block;
+    background-color: rgb(194, 96, 26);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.banner .slaiderpontos{
+    height: 20px;
+    width: 100vw;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .ponto{
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(194, 96, 26);
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .ponto.active{
+    background-color: rgb(194, 96, 26);
+}
+
+.default{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title{
+    font-size: 20px;
+}
+
+.default .section-desc{
+    font-size: 12px;
+    color:rgb(177, 177, 177);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.default .section-body{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.default.light{
+  background-color: rgb(236, 236, 236);
+}
+
+.default.light .section-title,
+.default.light .section-body{
+    color: black;
+}
+
+.default.dark{
+    background-color: black;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+    color: white;
+}
+
+
+
+
+.section-aboutus{
+    display: flex;
+}
+
+.section-aboutus--left{
+
+    flex: 1;
+}
+
+.section-aboutus--right{
+    width: 300px;
+}
+
+
+.section-aboutus a{
+    display: block;
+    flex-direction: column;
+    background-color: rgb(194, 96, 26);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+   font-size: 12px;
+   font-weight: 600;
+   padding: 10px 30px;
+   margin-top: 20px;
+   width: 130px;
+}
+
+.section-aboutus--right{
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img{
+    width: 480px;
+    box-shadow: 0px 5px 10px black;
+}
+
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.services{
+    display: flex;
+   
+}
+
+.services .items{
+    align-items: center;
+    flex: 1;
+    border-right: #999 solid 1px;
+}
+
+.items:first-child{
+    border-left: 1px solid #999;
+}
+
+.items{
+    padding-left: 100px;
+}
+
+.items h4{
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.items p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+
+
+
+.section-projetcs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.sertion-projeto{
+    border: #999 1px solid;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+
+.sertion-projeto ul,
+.sertion-projeto li{
+    list-style: none;
+}
+
+.sertion-projeto li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-left: 1px solid #ccc;
+    border-bottom: 3px solid #CCC;
+    color: #555;
+    cursor: pointer;
+}
+
+.sertion-projeto li:hover,
+.sertion-projeto li.active{
+    border-bottom: 3px solid rgb(194, 96, 26);
+}
+
+.sertion-projeto li:first-child{
+    border-left: 0;
+}
